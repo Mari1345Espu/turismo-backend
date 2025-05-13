@@ -1,0 +1,19 @@
+# Entorno virtual
+env/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Archivos de entorno
+.env
+
+# Base de datos local
+db.sqlite3
+
+# Archivos de sistema
+*.log
+*.DS_Store
+
+# Archivos de subida (si no quieres subir media/)
+media/
