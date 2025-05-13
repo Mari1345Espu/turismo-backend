@@ -6,6 +6,8 @@ usuarios = [
     {"email": "normal@demo.com", "username": "normal", "rol": "normal"},
     {"email": "experto@demo.com", "username": "experto", "rol": "experto"},
     {"email": "admin@demo.com", "username": "admin", "rol": "admin"},
+    {"email": "usuario@demo.com", "username": "usuario2", "rol": "normal"},
+    {"email": "experto2@demo.com", "username": "experto2", "rol": "experto"},
 ]
 
 for u in usuarios:
