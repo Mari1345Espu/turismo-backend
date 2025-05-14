@@ -18,6 +18,6 @@ for u in usuarios:
             password="test1234",
             rol=u["rol"]
         )
-        print(f"✅ Usuario {u['email']} creado.")
+        print(f" Usuario {u['email']} creado.")
     else:
-        print(f"ℹ️ Usuario {u['email']} ya existe.")
+        print(f"ℹ Usuario {u['email']} ya existe.")

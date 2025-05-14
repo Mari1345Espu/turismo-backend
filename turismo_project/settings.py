@@ -17,9 +17,9 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # === VARIABLES DE ENTORNO ===
-SECRET_KEY = os.getenv('SECRET_KEY', 'clave-insegura-dev')
-DEBUG = os.getenv('DEBUG', 'True') == 'True'
-ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
+SECRET_KEY = os.getenv('SECRET_KEY', 'unsafe-key')
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
+ALLOWED_HOSTS = ['*']
 
 # === APLICACIONES INSTALADAS ===
 INSTALLED_APPS = [
@@ -72,10 +72,7 @@ WSGI_APPLICATION = 'turismo_project.wsgi.application'
 
 # === BASE DE DATOS ===
 DATABASES = {
-    'default': dj_database_url.config(
-        default='sqlite:///db.sqlite3',
-        conn_max_age=600
-    )
+    'default': dj_database_url.config(default=os.environ.get("postgresql://turismo_db_jtfh_user:lxQFM836xpqrF6gNTrWnyefs5vkgATQW@dpg-d0ie2hmuk2gs73apkakg-a.oregon-postgres.render.com/turismo_db_jtfh"))
 }
 
 # === VALIDADORES DE CONTRASEÑA ===
