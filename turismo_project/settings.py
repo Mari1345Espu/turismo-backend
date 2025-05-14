@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'turismo_project.wsgi.application'
 
 # === BASE DE DATOS ===
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get("postgresql://turismo_db_jtfh_user:lxQFM836xpqrF6gNTrWnyefs5vkgATQW@dpg-d0ie2hmuk2gs73apkakg-a.oregon-postgres.render.com/turismo_db_jtfh"))
+    'default': dj_database_url.config(default=os.environ.get("DATABASE_URL"))
 }
 
 # === VALIDADORES DE CONTRASEÑA ===
