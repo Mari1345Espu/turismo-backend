@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'turismo_project.wsgi.application'
+WSGI_APPLICATION = 'turismo_project.wsgi'
 
 # === BASE DE DATOS ===
 DATABASES = {
